@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS </title>
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        background:#f0f0f5;
+      padding: 20px;
+    margin: 0;
+    }
+      .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #4CAF50;
+      margin-bottom: 10px;
+    }
+        #profile-card {
+      max-width: 360px;
+      background: #fbfbfa;
+      margin-left: 400px;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(56, 24, 24, 0.1);
+      text-align: center;
+    }
+.profile_pic{
+    width: 200px;
+      height: 200px;
+    border-radius: 500px;
+    border:solid 2px #4CAF50;
+    margin-bottom: 10px;
+}
+    .name {
+      font-size: 1.5rem;
+      color: #333;
+    }
+    .tagline {
+      font-size: 15px;
+      color: #777;
+    }
+.intro{
+    color: rgb(235, 235, 16);
+} 
+h2,h3 {
+    color: #19f420;
+}
+   
+    /* Child selector */
+    .social-links > a {
+      margin: 10px;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+
+    /* Attribute selector */
+    a[target="_blank"] {
+      color: #2196F3;
+    }
+
+    /* Pseudo-class selectors */
+    a:hover {
+      color: #E91E63;
+    }
+
+    li:first-child {
+      font-weight: bold;
+    }
+
+    li:last-child {
+      font-style: italic;
+    }
+
+    
+
+    /* Pseudo-element selectors */
+    h2::after {
+      content: " 🤳";
+      color: gold;
+    }
+
+    .tagline::before {
+      content: "👏 ";
+    }
+</style>
+
+<body>
+    <Div id="profile-card">
+        <img src="image.jpg" height="200" class="profile_pic" srcset="">
+        <h1 class="name">Mateen Haider</h1>
+        <h3 class="tagline">Web Developer | Graphic Designer</h3>
+        <h2 class="intro">About Me</h2>
+        <p>I am a passionate learner exploring web development, graphic designing, and content creation.</p>
+        <h3>Hobbies</h3>
+        <ul class="Hobbies">
+  <li>Football (CR7 forever ⚽)</li>
+  <li>Video Editing</li>
+  <li>Photography</li>
+  <li>Graphic Design</li>
+</ul>
+
+            <h3>Social Links</h3>
+            <div class="social-links">
+                <a href="https://www.tiktok.com/@reelsavage.x" target="_blank">TikTok</a>
+                <a href="https://www.instagram.com/concordiavibes" target="_blank">Instagram</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+            </div>
+    </Div>
+
+</body>
+
+</html>
